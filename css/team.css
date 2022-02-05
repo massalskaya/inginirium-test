@@ -1,0 +1,95 @@
+/* Banner 1 (yellow) */
+#mega-banner {
+	width: 100%;
+	height: 400px;
+	background: #FEE500 url("img/Career.png") center top / 300px no-repeat;
+	text-align: center;
+	margin: 0 auto;
+}
+#mega-banner p {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-top: 220px;
+}
+@media only screen and (min-width: 751px) {
+#mega-banner {
+	width: 100%;
+	height: 300px;
+	background: #FEE500 url("img/Career.png") 50px center / 360px no-repeat;
+	text-align: left;
+	margin-top: 100px;
+}
+#mega-banner p {
+	margin-left: 420px;
+	padding-top: 80px;
+}
+}
+@media only screen and (min-width: 991px) {
+#mega-banner p { margin-left: 500px; }
+}
+
+
+/* Teacher cards */
+#content .teachers {
+	display: flex;
+	flex-flow: row wrap;
+	z-index: 100;
+}
+#content .teachers section {
+	width: 47%;
+	margin: 30px 0 10px 0;
+	padding: 0 5px;
+}
+#content .teachers section header {
+	margin: 5px auto 30px auto;
+	position: relative;
+}
+#content .teachers section header::after {
+	width: 20%;
+	height: 2px;
+	border-bottom: 3px solid #D11E65;
+	position: absolute;
+	bottom: -15px;
+	content: " ";
+}
+#content .teachers section header img {
+	width: 100%;
+}
+#content .teachers section header h1 {
+	font-size: 1.4rem;
+	margin: 15px auto;
+}
+#content .teachers section header p {
+	font-size: 0.8rem;
+	color: #999;
+}
+
+@media only screen and (min-width: 751px) {
+#content .teachers { 
+	width: 90%; 
+	margin: 0 auto;
+}
+#content .teachers section {
+	width: 30%;
+	margin: 40px 10px 20px 0;
+}
+}
+@media only screen and (min-width: 991px) {
+#content .teachers section {
+	margin: 40px 15px 20px 0;
+}
+}
+
+
+/* Banner 2 (pink) */
+#high-banner {
+	width: 70%;
+	margin: 50px auto;
+	padding: 10px 40px;
+	background-color: #D11E65;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	font-weight: bold;
+	font-style: italic;
+	color: #FFF;
+}

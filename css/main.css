@@ -1,0 +1,362 @@
+/* COMMON */
+body {
+	font-family: Arial, Sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* HEADER */
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #FFF;
+	z-index: 10000;
+}
+
+#information::before {
+	width: 100%;
+}
+#information {
+	width: 100%;
+	margin: 10px auto 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+@media only screen and (min-width: 751px) {
+#information { width: 750px; }
+}
+@media only screen and (min-width: 991px) {
+#information { width: 80%; }
+}
+
+
+#information .logo { 
+	width: 200px; 
+	text-align: left;
+}
+@media only screen and (min-width: 751px) {
+#information .logo { width: 200px; }
+}
+@media only screen and (min-width: 991px) {
+#information .logo { width: 280px; }
+}
+#information .logo img { width: 100%; }
+
+
+#information .vcard {
+	font-weight: bold;
+	flex: 1 1 auto;
+	text-align: center;
+	display: none;
+}
+@media only screen and (min-width: 751px) {
+#information .vcard { display: block; }
+}
+#information .vcard .adr,
+#information .vcard .tel {
+	display: inline-block;
+	margin: 0 2%;
+}
+#information .vcard .tel {
+	font-size: 1.3rem;
+}
+
+
+#information .oferta::before {
+	text-align: right;
+}
+#information .oferta {
+	background-color: #D11385;
+	height: 30px;
+	border-radius: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 12px;
+	display: none;
+}
+@media only screen and (min-width: 751px) {
+#information .oferta { 
+	display: block; 
+	width: 200px;
+}
+}
+#information .oferta a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+#information #mobile-menu {
+	width: 32px;
+	height: 32px;
+	margin-left: auto;
+	cursor: pointer;
+}
+#information #mobile-menu.close {
+	background: url("img/mobile-menu.gif") center center no-repeat;
+}
+#information #mobile-menu.open {
+	background: url("img/mobile-menu-close.gif") center center no-repeat;
+}
+@media only screen and (min-width: 751px) {
+#information #mobile-menu {
+	display: none;
+}
+}
+
+
+#mobile-information {
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	line-height: 3rem;
+	text-align: center;
+}
+#mobile-information .oferta {
+	background-color: #D11385;
+	height: 30px;
+	width: 200px;
+	margin: 10px auto 0 auto;
+	border-radius: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#mobile-information .oferta a {
+	color: #FFF;
+	text-decoration: none;
+}
+#mobile-information .vcard .tel {
+	font-size: 1.3rem;
+}
+@media only screen and (min-width: 751px) {
+#mobile-information {
+	display: none;
+}
+}
+
+
+/* MENU */
+#main-menu {
+	display: none;
+}
+#main-menu #about-submenu {
+	display: none;
+}	
+#main-menu ul {
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+#main-menu ul li {
+	text-align: center;
+	margin: 10px auto;
+}
+#main-menu ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#main-menu ul li:hover a {
+	color: #D11E65;
+	transition: color 0.5s linear;
+}
+
+ul#about-submenu {
+	font-size: 1rem;
+	font-weight: bold;
+}
+ul#about-submenu li a,
+#main-menu ul li:hover ul#about-submenu li a {
+	color: #000;
+}
+ul#about-submenu li:hover a,
+#main-menu ul li:hover ul#about-submenu li:hover a {
+	color: #813F8E;
+}
+
+
+@media only screen and (min-width: 751px) {
+#main-menu::before {
+	width: 100%;
+}
+#main-menu {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 8px;
+	text-align: center;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#main-menu ul {
+	margin: 25px auto;
+	list-style: none;
+	font-size: 0.9rem;
+}
+#main-menu ul li {
+	display: inline-block;
+	margin: 0 12px;
+}
+#main-menu ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#main-menu ul li:hover a {
+	color: #D11E65;
+	transition: color 0.5s linear;
+	text-decoration: underline;
+}
+
+ul#about-submenu {
+	display: none;
+	width: 250px;
+	position: absolute;
+	top: 80px;
+	margin-left: -50px;
+	background-color: #FEE500;
+	border: 1px solid #000;
+	margin-top: 50px;
+}
+ul#about-submenu li {
+	display: block;
+	margin: 5px auto;
+}
+ul#about-submenu li a,
+#main-menu ul li:hover ul#about-submenu li a {
+	text-decoration: none;
+}
+
+
+}  /* media min-width 751 */
+
+
+
+/* CONTENT*/
+#content {
+	width:100%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 240px;
+}
+@media only screen and (min-width: 751px) {
+#content { margin-top: 20px; }
+}
+@media only screen and (min-width: 751px) {
+#content { margin-top: 30px; }
+}
+
+
+/* Headers */
+#content h1 {
+	font-size: 2rem;
+	width: 90%;
+	text-align: center;
+	margin: 45px auto 20px auto;
+}
+#content h2 {
+	font-size: 1.2rem;
+	width: 90%;
+	text-align: center;
+	font-weight: normal;
+	margin: 0 auto 20px auto;
+}
+@media only screen and (min-width: 751px) {
+#content h1 {
+	font-size: 2.5rem;
+	width: 80%;
+}
+#content h2 {
+	font-size: 1.5rem;
+	width: 80%;
+}
+}
+@media only screen and (min-width: 991px) {
+#content h1 { width: 70%; }
+#content h2 { width: 70%; }
+}
+
+
+/* FOOTER */
+footer {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 20px 0 40px 0;
+}
+#yandex-map {
+	width: 100%;
+}
+#yandex-map h2 {
+	width: 100%;
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+footer section {
+	width: 70%;
+	margin: 10px auto;
+}
+footer .logo,
+footer .compozite {
+	/*width: 100%;*/
+	margin: 10px 0;
+}
+footer .logo img,
+footer .compozite img {
+	height: 40px;
+	vertical-align: middle;
+}
+footer .smi,
+footer .work {
+	margin: 8px 0;
+	line-height: 1.5rem;
+}
+footer .smi .email,
+footer .work .email {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+footer .soc ul {
+	list-style: none;
+	padding-left: 0;
+}
+footer .soc ul li {
+	display: inline;
+	margin: 0 5px;
+}
+footer .soc img {
+	width: 30px;
+	height: 30px;
+}
+footer .phone {
+	font-size: 1.2rem;
+	margin: 20px 0;
+}
+footer .phone .tel {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 751px) {
+footer section {
+	width: 45%;
+}
+}
+
+
+
+
+
+	border: 1px solid red; /*****/
+	
+	
